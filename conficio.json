@@ -1,0 +1,736 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "PartnerExchangeApi"
+  },
+  "host": "partnerexchange.azurewebsites.net",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/api/change/Process": {
+      "post": {
+        "tags": [
+          "Change"
+        ],
+        "summary": "Process change",
+        "operationId": "Change_Process",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "change",
+            "in": "body",
+            "description": "Change record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Change"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/change/Test": {
+      "post": {
+        "tags": [
+          "Change"
+        ],
+        "summary": "Test a change record",
+        "operationId": "Change_Test",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "change",
+            "in": "body",
+            "description": "Change record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Change"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/invoice/Check": {
+      "get": {
+        "tags": [
+          "Invoice"
+        ],
+        "summary": "Check today's invoice records against today's invoice detail records",
+        "operationId": "Invoice_Check",
+        "consumes": [],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/invoice/Submit": {
+      "post": {
+        "tags": [
+          "Invoice"
+        ],
+        "summary": "Submit an invoice (summary).  Send BEFORE invoice detail records",
+        "operationId": "Invoice_Submit",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "invoice",
+            "in": "body",
+            "description": "Invoice record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Invoice"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/invoice/Test": {
+      "post": {
+        "tags": [
+          "Invoice"
+        ],
+        "summary": "Test an invoice record",
+        "operationId": "Invoice_Test",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "invoice",
+            "in": "body",
+            "description": "Invoice record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Invoice"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/invoicedetail/Submit": {
+      "post": {
+        "tags": [
+          "InvoiceDetail"
+        ],
+        "summary": "Submit an invoice detail (transaction).  Send AFTER corresponding invoice record",
+        "operationId": "InvoiceDetail_Submit",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "detail",
+            "in": "body",
+            "description": "InvoiceDetail record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/InvoiceDetail"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/invoicedetail/Test": {
+      "post": {
+        "tags": [
+          "InvoiceDetail"
+        ],
+        "summary": "Test an invoice detail record",
+        "operationId": "InvoiceDetail_Test",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "detail",
+            "in": "body",
+            "description": "InvoiceDetail record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/InvoiceDetail"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/transaction/Post": {
+      "post": {
+        "tags": [
+          "Transaction"
+        ],
+        "summary": "Post a transaction (payment)",
+        "operationId": "Transaction_Post",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "transaction",
+            "in": "body",
+            "description": "Transaction record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Transaction"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/api/transaction/Test": {
+      "post": {
+        "tags": [
+          "Transaction"
+        ],
+        "summary": "Test a transaction record",
+        "operationId": "Transaction_Test",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Exchange type (\"account\" or \"simpleaccount\")",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "transaction",
+            "in": "body",
+            "description": "Transaction record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Transaction"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "access token",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/token": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "name": "grant_type",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "default": "password"
+          },
+          {
+            "name": "username",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          }
+        ],
+		        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Change": {
+      "description": "The change.",
+      "type": "object",
+      "properties": {
+        "ConCapProAccountId": {
+          "format": "int64",
+          "description": "Gets or sets the id.",
+          "type": "integer"
+        },
+        "ChangeDateTime": {
+          "format": "date-time",
+          "description": "Gets or sets the change date time.",
+          "type": "string"
+        },
+        "FieldName": {
+          "description": "Gets or sets the field name.",
+          "type": "string"
+        },
+        "NewValue": {
+          "description": "Gets or sets the new value.",
+          "type": "string"
+        }
+      }
+    },
+    "Invoice": {
+      "description": "The invoice.",
+      "type": "object",
+      "properties": {
+        "InvoiceId": {
+          "description": "Gets or sets the invoice number.",
+          "type": "string"
+        },
+        "From": {
+          "format": "date-time",
+          "description": "Gets or sets the from.",
+          "type": "string"
+        },
+        "To": {
+          "format": "date-time",
+          "description": "Gets or sets the to.",
+          "type": "string"
+        },
+        "TotalPaid": {
+          "format": "double",
+          "description": "Gets or sets the total paid.",
+          "type": "number"
+        },
+        "TotalCommission": {
+          "format": "double",
+          "description": "Gets or sets the total commission.",
+          "type": "number"
+        },
+        "TotalDueAgency": {
+          "format": "double",
+          "description": "Gets or sets the total due agency.",
+          "type": "number"
+        },
+        "TotalDueCreditor": {
+          "format": "double",
+          "description": "Gets or sets the total due creditor.",
+          "type": "number"
+        },
+        "SalesTax1Name": {
+          "description": "Gets or sets the sales tax 1 name.",
+          "type": "string"
+        },
+        "SalesTax1Amount": {
+          "format": "double",
+          "description": "Gets or sets the sales tax 1 amount.",
+          "type": "number"
+        },
+        "SalesTax2Name": {
+          "description": "Gets or sets the sales tax 2 name.",
+          "type": "string"
+        },
+        "SalesTax2Amount": {
+          "format": "double",
+          "description": "Gets or sets the sales tax 2 amount.",
+          "type": "number"
+        },
+        "SalesTax3Name": {
+          "description": "Gets or sets the sales tax 3 name.",
+          "type": "string"
+        },
+        "SalesTax3Amount": {
+          "format": "double",
+          "description": "Gets or sets the sales tax 3 amount.",
+          "type": "number"
+        },
+        "SalesTaxIds": {
+          "description": "Gets or sets the sales tax ids.",
+          "type": "string"
+        },
+        "PaymentToAgency": {
+          "format": "double",
+          "description": "Gets or sets the payment to agency.",
+          "type": "number"
+        },
+        "PaymentToCreditor": {
+          "format": "double",
+          "description": "Gets or sets the payment to creditor.",
+          "type": "number"
+        }
+      }
+    },
+    "InvoiceDetail": {
+      "description": "The invoice detail.",
+      "type": "object",
+      "properties": {
+        "ConCapProAccountId": {
+          "format": "int64",
+          "description": "Gets or sets the con cap pro account id.",
+          "type": "integer"
+        },
+        "InvoiceId": {
+          "description": "Gets or sets the invoice id.",
+          "type": "string"
+        },
+        "TransactionDate": {
+          "format": "date-time",
+          "description": "Gets or sets the transaction date.",
+          "type": "string"
+        },
+        "AgencyTransactionId": {
+          "description": "Gets or sets the agency transaction id.",
+          "type": "string"
+        },
+        "CreditorTransactionId": {
+          "description": "Gets or sets the creditor transaction id.",
+          "type": "string"
+        },
+        "PostingDate": {
+          "format": "date-time",
+          "description": "Gets or sets the posting date.",
+          "type": "string"
+        },
+        "TransactionCode": {
+          "description": "Gets or sets the transaction code.",
+          "type": "string"
+        },
+        "TransactionAmount": {
+          "format": "double",
+          "description": "Gets or sets the transaction amount.",
+          "type": "number"
+        },
+        "CommissionRate": {
+          "format": "double",
+          "description": "Gets or sets the commission rate.",
+          "type": "number"
+        },
+        "Commission": {
+          "format": "double",
+          "description": "Gets or sets the commission.",
+          "type": "number"
+        },
+        "AmountDueAgency": {
+          "format": "double",
+          "description": "Gets or sets the amount due agency.",
+          "type": "number"
+        },
+        "AmountDueCreditor": {
+          "format": "double",
+          "description": "Gets or sets the amount due creditor.",
+          "type": "number"
+        }
+      }
+    },
+    "Transaction": {
+      "description": "payment record",
+      "type": "object",
+      "properties": {
+        "ConCapProAccountId": {
+          "format": "int64",
+          "description": "Gets or sets the id.",
+          "type": "integer"
+        },
+        "PostingUserId": {
+          "description": "Gets or sets the posting user id.",
+          "type": "string"
+        },
+        "PostingUserName": {
+          "description": "Gets or sets the posting user name.",
+          "type": "string"
+        },
+        "PostingTime": {
+          "format": "date-time",
+          "description": "Gets or sets the posting time.",
+          "type": "string"
+        },
+        "TransactionDate": {
+          "format": "date-time",
+          "description": "Gets or sets the transaction date.",
+          "type": "string"
+        },
+        "TransactionId": {
+          "description": "Gets or sets the transaction id.",
+          "type": "string"
+        },
+        "TransactionCode": {
+          "description": "Gets or sets the transaction code.",
+          "type": "string"
+        },
+        "TransactionAmount": {
+          "format": "double",
+          "description": "Gets or sets the transaction amount.",
+          "type": "number"
+        }
+      }
+    }
+  }
+}
