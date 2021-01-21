@@ -1,4 +1,4 @@
-# d2r_connector\conficio\InvoiceApi
+# d2r_connectors\conficio\InvoiceApi
 
 All URIs are relative to *https://partnerexchange.azurewebsites.net*
 
@@ -23,7 +23,7 @@ Check today's invoice records against today's invoice detail records
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new d2r_connector\conficio\Api\InvoiceApi(
+$apiInstance = new d2r_connectors\conficio\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -77,13 +77,13 @@ Submit an invoice (summary).  Send BEFORE invoice detail records
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new d2r_connector\conficio\Api\InvoiceApi(
+$apiInstance = new d2r_connectors\conficio\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$invoice = new \d2r_connector\conficio\Model\Invoice(); // \d2r_connector\conficio\Model\Invoice | Invoice record
+$invoice = new \d2r_connectors\conficio\Model\Invoice(); // \d2r_connectors\conficio\Model\Invoice | Invoice record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -101,7 +101,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **invoice** | [**\d2r_connector\conficio\Model\Invoice**](../Model/Invoice.md)| Invoice record |
+ **invoice** | [**\d2r_connectors\conficio\Model\Invoice**](../Model/Invoice.md)| Invoice record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type
@@ -135,13 +135,13 @@ Test an invoice record
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new d2r_connector\conficio\Api\InvoiceApi(
+$apiInstance = new d2r_connectors\conficio\Api\InvoiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$invoice = new \d2r_connector\conficio\Model\Invoice(); // \d2r_connector\conficio\Model\Invoice | Invoice record
+$invoice = new \d2r_connectors\conficio\Model\Invoice(); // \d2r_connectors\conficio\Model\Invoice | Invoice record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -159,7 +159,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **invoice** | [**\d2r_connector\conficio\Model\Invoice**](../Model/Invoice.md)| Invoice record |
+ **invoice** | [**\d2r_connectors\conficio\Model\Invoice**](../Model/Invoice.md)| Invoice record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type

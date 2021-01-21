@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,15 +27,15 @@
  * Do not edit the class manually.
  */
 
-namespace d2r_connector\conficio;
+namespace d2r_connectors\conficio;
 
-use d2r_connector\conficio\Model\ModelInterface;
+use d2r_connectors\conficio\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -328,7 +328,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\d2r_connector\conficio\Model\\' . $data->{$discriminator};
+                $subclass = '\d2r_connectors\conficio\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

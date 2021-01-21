@@ -1,4 +1,4 @@
-# d2r_connector\conficio\ChangeApi
+# d2r_connectors\conficio\ChangeApi
 
 All URIs are relative to *https://partnerexchange.azurewebsites.net*
 
@@ -22,13 +22,13 @@ Process change
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new d2r_connector\conficio\Api\ChangeApi(
+$apiInstance = new d2r_connectors\conficio\Api\ChangeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$change = new \d2r_connector\conficio\Model\Change(); // \d2r_connector\conficio\Model\Change | Change record
+$change = new \d2r_connectors\conficio\Model\Change(); // \d2r_connectors\conficio\Model\Change | Change record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -46,7 +46,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **change** | [**\d2r_connector\conficio\Model\Change**](../Model/Change.md)| Change record |
+ **change** | [**\d2r_connectors\conficio\Model\Change**](../Model/Change.md)| Change record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type
@@ -80,13 +80,13 @@ Test a change record
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new d2r_connector\conficio\Api\ChangeApi(
+$apiInstance = new d2r_connectors\conficio\Api\ChangeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$change = new \d2r_connector\conficio\Model\Change(); // \d2r_connector\conficio\Model\Change | Change record
+$change = new \d2r_connectors\conficio\Model\Change(); // \d2r_connectors\conficio\Model\Change | Change record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -104,7 +104,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **change** | [**\d2r_connector\conficio\Model\Change**](../Model/Change.md)| Change record |
+ **change** | [**\d2r_connectors\conficio\Model\Change**](../Model/Change.md)| Change record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type

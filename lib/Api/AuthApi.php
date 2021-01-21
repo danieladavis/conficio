@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace d2r_connector\conficio\Api;
+namespace d2r_connectors\conficio\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use d2r_connector\conficio\ApiException;
-use d2r_connector\conficio\Configuration;
-use d2r_connector\conficio\HeaderSelector;
-use d2r_connector\conficio\ObjectSerializer;
+use d2r_connectors\conficio\ApiException;
+use d2r_connectors\conficio\Configuration;
+use d2r_connectors\conficio\HeaderSelector;
+use d2r_connectors\conficio\ObjectSerializer;
 
 /**
  * AuthApi Class Doc Comment
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,7 +122,7 @@ class AuthApi
      * @param  string $username username (optional)
      * @param  string $password password (optional)
      *
-     * @throws \d2r_connector\conficio\ApiException on non-2xx response
+     * @throws \d2r_connectors\conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -139,7 +139,7 @@ class AuthApi
      * @param  string $username (optional)
      * @param  string $password (optional)
      *
-     * @throws \d2r_connector\conficio\ApiException on non-2xx response
+     * @throws \d2r_connectors\conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */

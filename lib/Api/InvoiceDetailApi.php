@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace d2r_connector\conficio\Api;
+namespace d2r_connectors\conficio\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use d2r_connector\conficio\ApiException;
-use d2r_connector\conficio\Configuration;
-use d2r_connector\conficio\HeaderSelector;
-use d2r_connector\conficio\ObjectSerializer;
+use d2r_connectors\conficio\ApiException;
+use d2r_connectors\conficio\Configuration;
+use d2r_connectors\conficio\HeaderSelector;
+use d2r_connectors\conficio\ObjectSerializer;
 
 /**
  * InvoiceDetailApi Class Doc Comment
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -121,10 +121,10 @@ class InvoiceDetailApi
      * Submit an invoice detail (transaction).  Send AFTER corresponding invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \d2r_connector\conficio\ApiException on non-2xx response
+     * @throws \d2r_connectors\conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -140,10 +140,10 @@ class InvoiceDetailApi
      * Submit an invoice detail (transaction).  Send AFTER corresponding invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \d2r_connector\conficio\ApiException on non-2xx response
+     * @throws \d2r_connectors\conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -230,7 +230,7 @@ class InvoiceDetailApi
      * Submit an invoice detail (transaction).  Send AFTER corresponding invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -252,7 +252,7 @@ class InvoiceDetailApi
      * Submit an invoice detail (transaction).  Send AFTER corresponding invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class InvoiceDetailApi
      * Create request for operation 'invoiceDetailSubmit'
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -416,10 +416,10 @@ class InvoiceDetailApi
      * Test an invoice detail record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \d2r_connector\conficio\ApiException on non-2xx response
+     * @throws \d2r_connectors\conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -435,10 +435,10 @@ class InvoiceDetailApi
      * Test an invoice detail record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \d2r_connector\conficio\ApiException on non-2xx response
+     * @throws \d2r_connectors\conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -525,7 +525,7 @@ class InvoiceDetailApi
      * Test an invoice detail record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -547,7 +547,7 @@ class InvoiceDetailApi
      * Test an invoice detail record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -596,7 +596,7 @@ class InvoiceDetailApi
      * Create request for operation 'invoiceDetailTest'
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \d2r_connector\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
+     * @param  \d2r_connectors\conficio\Model\InvoiceDetail $detail InvoiceDetail record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException

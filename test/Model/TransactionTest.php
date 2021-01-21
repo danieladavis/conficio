@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace d2r_connector\conficio;
+namespace d2r_connectors\conficio;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description payment record
- * @package     d2r_connector\conficio
+ * @package     d2r_connectors\conficio
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

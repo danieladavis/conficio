@@ -1,4 +1,4 @@
-# d2r_connector\conficio\TransactionApi
+# d2r_connectors\conficio\TransactionApi
 
 All URIs are relative to *https://partnerexchange.azurewebsites.net*
 
@@ -22,13 +22,13 @@ Post a transaction (payment)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new d2r_connector\conficio\Api\TransactionApi(
+$apiInstance = new d2r_connectors\conficio\Api\TransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$transaction = new \d2r_connector\conficio\Model\Transaction(); // \d2r_connector\conficio\Model\Transaction | Transaction record
+$transaction = new \d2r_connectors\conficio\Model\Transaction(); // \d2r_connectors\conficio\Model\Transaction | Transaction record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -46,7 +46,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **transaction** | [**\d2r_connector\conficio\Model\Transaction**](../Model/Transaction.md)| Transaction record |
+ **transaction** | [**\d2r_connectors\conficio\Model\Transaction**](../Model/Transaction.md)| Transaction record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type
@@ -80,13 +80,13 @@ Test a transaction record
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new d2r_connector\conficio\Api\TransactionApi(
+$apiInstance = new d2r_connectors\conficio\Api\TransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$transaction = new \d2r_connector\conficio\Model\Transaction(); // \d2r_connector\conficio\Model\Transaction | Transaction record
+$transaction = new \d2r_connectors\conficio\Model\Transaction(); // \d2r_connectors\conficio\Model\Transaction | Transaction record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -104,7 +104,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **transaction** | [**\d2r_connector\conficio\Model\Transaction**](../Model/Transaction.md)| Transaction record |
+ **transaction** | [**\d2r_connectors\conficio\Model\Transaction**](../Model/Transaction.md)| Transaction record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type

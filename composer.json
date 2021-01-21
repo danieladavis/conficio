@@ -19,9 +19,9 @@
         }
     ],
     "autoload": {
-        "psr-4": { "d2r_connector\\conficio\\" : "lib/" }
+        "psr-4": { "d2r_connectors\\conficio\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "d2r_connector\\conficio\\" : "test/" }
+        "psr-4": { "d2r_connectors\\conficio\\" : "test/" }
     }
 }

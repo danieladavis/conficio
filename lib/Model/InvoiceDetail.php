@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace d2r_connector\conficio\Model;
+namespace d2r_connectors\conficio\Model;
 
 use \ArrayAccess;
-use \d2r_connector\conficio\ObjectSerializer;
+use \d2r_connectors\conficio\ObjectSerializer;
 
 /**
  * InvoiceDetail Class Doc Comment
  *
  * @category Class
  * @description The invoice detail.
- * @package  d2r_connector\conficio
+ * @package  d2r_connectors\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
