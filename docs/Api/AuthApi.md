@@ -1,4 +1,4 @@
-# conficio\AuthApi
+# d2r_connector\conficio\AuthApi
 
 All URIs are relative to *https://partnerexchange.azurewebsites.net*
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new conficio\Api\AuthApi(
+$apiInstance = new d2r_connector\conficio\Api\AuthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

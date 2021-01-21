@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  conficio
+ * @package  d2r_connector\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace conficio\Model;
+namespace d2r_connector\conficio\Model;
 
 use \ArrayAccess;
-use \conficio\ObjectSerializer;
+use \d2r_connector\conficio\ObjectSerializer;
 
 /**
  * Transaction Class Doc Comment
  *
  * @category Class
  * @description payment record
- * @package  conficio
+ * @package  d2r_connector\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

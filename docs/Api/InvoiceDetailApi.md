@@ -1,4 +1,4 @@
-# conficio\InvoiceDetailApi
+# d2r_connector\conficio\InvoiceDetailApi
 
 All URIs are relative to *https://partnerexchange.azurewebsites.net*
 
@@ -22,13 +22,13 @@ Submit an invoice detail (transaction).  Send AFTER corresponding invoice record
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new conficio\Api\InvoiceDetailApi(
+$apiInstance = new d2r_connector\conficio\Api\InvoiceDetailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$detail = new \conficio\Model\InvoiceDetail(); // \conficio\Model\InvoiceDetail | InvoiceDetail record
+$detail = new \d2r_connector\conficio\Model\InvoiceDetail(); // \d2r_connector\conficio\Model\InvoiceDetail | InvoiceDetail record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -46,7 +46,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **detail** | [**\conficio\Model\InvoiceDetail**](../Model/InvoiceDetail.md)| InvoiceDetail record |
+ **detail** | [**\d2r_connector\conficio\Model\InvoiceDetail**](../Model/InvoiceDetail.md)| InvoiceDetail record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type
@@ -80,13 +80,13 @@ Test an invoice detail record
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new conficio\Api\InvoiceDetailApi(
+$apiInstance = new d2r_connector\conficio\Api\InvoiceDetailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $type = 'type_example'; // string | Exchange type (\"account\" or \"simpleaccount\")
-$detail = new \conficio\Model\InvoiceDetail(); // \conficio\Model\InvoiceDetail | InvoiceDetail record
+$detail = new \d2r_connector\conficio\Model\InvoiceDetail(); // \d2r_connector\conficio\Model\InvoiceDetail | InvoiceDetail record
 $authorization = 'authorization_example'; // string | access token
 
 try {
@@ -104,7 +104,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **type** | **string**| Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) |
- **detail** | [**\conficio\Model\InvoiceDetail**](../Model/InvoiceDetail.md)| InvoiceDetail record |
+ **detail** | [**\d2r_connector\conficio\Model\InvoiceDetail**](../Model/InvoiceDetail.md)| InvoiceDetail record |
  **authorization** | **string**| access token | [optional]
 
 ### Return type

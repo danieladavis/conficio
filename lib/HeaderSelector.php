@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  conficio
+ * @package  d2r_connector\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace conficio;
+namespace d2r_connector\conficio;
 
 use \Exception;
 
@@ -34,7 +34,7 @@ use \Exception;
  * ApiException Class Doc Comment
  *
  * @category Class
- * @package  conficio
+ * @package  d2r_connector\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

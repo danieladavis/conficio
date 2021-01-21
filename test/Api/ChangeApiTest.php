@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  conficio
+ * @package  d2r_connector\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace conficio;
+namespace d2r_connector\conficio;
 
-use \conficio\Configuration;
-use \conficio\ApiException;
-use \conficio\ObjectSerializer;
+use \d2r_connector\conficio\Configuration;
+use \d2r_connector\conficio\ApiException;
+use \d2r_connector\conficio\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * ChangeApiTest Class Doc Comment
  *
  * @category Class
- * @package  conficio
+ * @package  d2r_connector\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  conficio
+ * @package  d2r_connector\conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace conficio;
+namespace d2r_connector\conficio;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description The invoice detail.
- * @package     conficio
+ * @package     d2r_connector\conficio
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

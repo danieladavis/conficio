@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  conficio\Model
+ * @package  d2r_connector\conficio\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace conficio\Model;
+namespace d2r_connector\conficio\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package conficio\Model
+ * @package d2r_connector\conficio\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface
