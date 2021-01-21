@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace conficio\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \conficio\ObjectSerializer;
 
 /**
  * Invoice Class Doc Comment
  *
  * @category Class
  * @description The invoice.
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

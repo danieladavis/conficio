@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace conficio\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use conficio\ApiException;
+use conficio\Configuration;
+use conficio\HeaderSelector;
+use conficio\ObjectSerializer;
 
 /**
  * AuthApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,7 +122,7 @@ class AuthApi
      * @param  string $username username (optional)
      * @param  string $password password (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -139,7 +139,7 @@ class AuthApi
      * @param  string $username (optional)
      * @param  string $password (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace conficio\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \conficio\ObjectSerializer;
 
 /**
  * Transaction Class Doc Comment
  *
  * @category Class
  * @description payment record
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

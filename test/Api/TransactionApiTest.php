@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Client;
+namespace conficio;
 
-use \OpenAPI\Client\Configuration;
-use \OpenAPI\Client\ApiException;
-use \OpenAPI\Client\ObjectSerializer;
+use \conficio\Configuration;
+use \conficio\ApiException;
+use \conficio\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * TransactionApiTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace conficio\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use conficio\ApiException;
+use conficio\Configuration;
+use conficio\HeaderSelector;
+use conficio\ObjectSerializer;
 
 /**
  * InvoiceApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,7 +122,7 @@ class InvoiceApi
      *
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -139,7 +139,7 @@ class InvoiceApi
      *
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -384,10 +384,10 @@ class InvoiceApi
      * Submit an invoice (summary).  Send BEFORE invoice detail records
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -403,10 +403,10 @@ class InvoiceApi
      * Submit an invoice (summary).  Send BEFORE invoice detail records
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -493,7 +493,7 @@ class InvoiceApi
      * Submit an invoice (summary).  Send BEFORE invoice detail records
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -515,7 +515,7 @@ class InvoiceApi
      * Submit an invoice (summary).  Send BEFORE invoice detail records
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -564,7 +564,7 @@ class InvoiceApi
      * Create request for operation 'invoiceSubmit'
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -679,10 +679,10 @@ class InvoiceApi
      * Test an invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -698,10 +698,10 @@ class InvoiceApi
      * Test an invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -788,7 +788,7 @@ class InvoiceApi
      * Test an invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -810,7 +810,7 @@ class InvoiceApi
      * Test an invoice record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -859,7 +859,7 @@ class InvoiceApi
      * Create request for operation 'invoiceTest'
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Invoice $invoice Invoice record (required)
+     * @param  \conficio\Model\Invoice $invoice Invoice record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException

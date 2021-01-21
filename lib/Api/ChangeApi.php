@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace conficio\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use conficio\ApiException;
+use conficio\Configuration;
+use conficio\HeaderSelector;
+use conficio\ObjectSerializer;
 
 /**
  * ChangeApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  conficio
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -121,10 +121,10 @@ class ChangeApi
      * Process change
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -140,10 +140,10 @@ class ChangeApi
      * Process change
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -230,7 +230,7 @@ class ChangeApi
      * Process change
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -252,7 +252,7 @@ class ChangeApi
      * Process change
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class ChangeApi
      * Create request for operation 'changeProcess'
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -416,10 +416,10 @@ class ChangeApi
      * Test a change record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -435,10 +435,10 @@ class ChangeApi
      * Test a change record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \conficio\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -525,7 +525,7 @@ class ChangeApi
      * Test a change record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -547,7 +547,7 @@ class ChangeApi
      * Test a change record
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
@@ -596,7 +596,7 @@ class ChangeApi
      * Create request for operation 'changeTest'
      *
      * @param  string $type Exchange type (\&quot;account\&quot; or \&quot;simpleaccount\&quot;) (required)
-     * @param  \OpenAPI\Client\Model\Change $change Change record (required)
+     * @param  \conficio\Model\Change $change Change record (required)
      * @param  string $authorization access token (optional)
      *
      * @throws \InvalidArgumentException
